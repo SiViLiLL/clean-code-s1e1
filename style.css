@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.about .img {
+.about .about__img {
   width: 100%;
 }
-.about .more_inf {
+.about .about__link {
   font-family: fantasy, cursive;
 }
 
@@ -24,7 +24,7 @@
   }
 
 }
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -34,7 +34,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.task-adder__controllers {
   display: flex;
 }
 ul {
@@ -63,7 +63,7 @@ button{
 }
 /* Heading */
 .title,
-.add-title {
+.task-adder__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -72,7 +72,7 @@ button{
   margin: 0;
   text-transform: uppercase;
 }
-#new-task,
+.task_new,
 .edit-mode > .task {
   margin: 0;
   font-size: 18px;
@@ -85,22 +85,22 @@ button{
   font-family: Lato, sans-serif;
   color: #888;
 }
-#new-task,
+.task_new,
 .task:focus {
   color: #333;
 }
 
 /* New Task */
-.add-title {
+.task-adder__title {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.task_new {
   width: 318px;
 }
 
 /* Task list */
-.tasks-item {
+.tasks-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,11 +108,11 @@ button{
   justify-content: space-between;
   align-items: center;
 }
-.tasks-item > * {
+.tasks-list__item > * {
   vertical-align: middle;
 }
 
-.tasks-item > .task-status {
+.tasks-list__item > .checkbox {
   margin: 0 10px;
 }
 .task {
@@ -124,12 +124,12 @@ button{
 .task {
   width: 226px;
 }
-.btn.delete .delete-icon {
+.btn_delete .delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete .delete-icon:hover {
+.btn_delete .delete-icon:hover {
   transform: rotateZ(0);
 }
 
@@ -140,15 +140,15 @@ button.delete .delete-icon:hover {
 }
 
 /* Edit Task */
-.tasks-list .tasks-item .task:nth-of-type(2) {
+.tasks-list .tasks-list__item .task:nth-of-type(2) {
   display: none;
 }
 
-.tasks-list .tasks-item.edit-mode .task:nth-of-type(2) {
+.tasks-list .tasks-list__item.edit-mode .task:nth-of-type(2) {
   display: inline-block;
   width: 224px;
 }
 
-.tasks-list .tasks-item.edit-mode .task:first-of-type {
+.tasks-list .tasks-list__item.edit-mode .task:first-of-type {
   display: none;
 }
